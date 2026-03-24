@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#fafafa" stroke="#ececec"/>
+  <text x="320" y="175" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" fill="#ff5722">Capture : Rapports</text>
+  <text x="320" y="205" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#6b7280">Remplacez par une capture réelle (PNG/GIF)</text>
+</svg>
