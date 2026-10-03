@@ -727,10 +727,274 @@ code {
   outline-offset: 3px;
 }
 
+/* Modules */
+.module {
+  position: relative;
+}
+
+.module-num {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.card .module-q {
+  margin-bottom: 0.45rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.option-card {
+  margin-top: clamp(1rem, 2.5vw, 1.5rem);
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  border-style: dashed;
+}
+
+.option-tag {
+  flex: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--text);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+/* Tableau comparatif */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.97rem;
+}
+
+.compare th {
+  background: var(--text);
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+  padding: 0.9rem 1.1rem;
+}
+
+.compare th:not(:first-child),
+.compare td:not(:first-child) {
+  text-align: center;
+  width: 9.5rem;
+}
+
+.compare td {
+  padding: 0.85rem 1.1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.compare td.yes {
+  color: #16a34a;
+  font-weight: 800;
+}
+
+.compare td.no {
+  color: #a3acb9;
+}
+
+/* Tarifs */
+.pricing {
+  align-items: stretch;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card--reco {
+  border: 2px solid var(--primary);
+  background: linear-gradient(180deg, #fff, #fff7f2);
+}
+
+.price-card--opt {
+  background: var(--surface);
+}
+
+.price-badge {
+  align-self: flex-start;
+  margin-bottom: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.price-badge--dark {
+  color: var(--text);
+}
+
+.card .price-for {
+  margin-bottom: 0.9rem;
+  font-size: 0.92rem;
+}
+
+.card .price {
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.price small {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.price-details {
+  margin-top: clamp(1.25rem, 3vw, 1.75rem);
+  padding: 1.1rem 1.35rem;
+  border-radius: var(--radius-md);
+  background: #fff4ec;
+  border: 1px solid rgba(255, 107, 44, 0.2);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.price-details p {
+  margin: 0.35rem 0;
+}
+
+.price-details strong {
+  color: var(--text);
+}
+
+/* Détails des tarifs */
+.card .price-old {
+  margin: 0;
+  color: #9aa3b2;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+
+.card .price-all {
+  margin: -0.6rem 0 1rem;
+  font-size: 0.88rem;
+}
+
+.price-tables {
+  margin-top: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.price-h {
+  margin: 1.5rem 0 0.7rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.price-tables > div > .price-h:first-child {
+  margin-top: 0;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.price-table th {
+  background: var(--text);
+  color: #fff;
+  text-align: left;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+}
+
+.price-table td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.price-table thead + tbody tr:first-child td,
+.price-table tbody:first-child tr:first-child td {
+  border-top: none;
+}
+
+.price-table .r {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.price-table .sagecol {
+  background: var(--surface);
+}
+
+.price-table th.sagecol {
+  background: #2a3346;
+}
+
+.price-sub {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: normal;
+}
+
+.price-note {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.price-cond {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.price-cond li {
+  margin: 0.25rem 0;
+}
+
 @media (max-width: 920px) {
   .cards-3,
   .media-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .option-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .compare th:not(:first-child),
+  .compare td:not(:first-child) {
+    width: auto;
+  }
+
+  .price-table--budget {
+    min-width: 560px;
   }
 }
 
